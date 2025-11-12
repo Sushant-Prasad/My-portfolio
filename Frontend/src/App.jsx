@@ -1,3 +1,4 @@
+import CustomCursor from "./components/customCursor";
 import Navbar from "./components/Navbar";
 import ParticlesBackground from "./components/ParticlesBackground";
 import About from "./pages/About";
@@ -11,6 +12,7 @@ import Skills from "./pages/Skills";
 function App() {
   return (
       <div className="relative gradient text-white">
+        <CustomCursor/>
         <ParticlesBackground/>
        <Navbar/>
        <Home/>
