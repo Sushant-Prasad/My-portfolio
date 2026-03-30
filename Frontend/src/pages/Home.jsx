@@ -12,9 +12,9 @@ const Home = () => {
   const [deleting, setDeleting] = useState(false);
 
   const socials = [
-    { Icon: FaXTwitter, label: "X", href: "https://x.com/gauravbuilds" },
-    { Icon: FaLinkedin, label: "LinkedIn", href: "https://linkedin.com/in/yourprofile" },
-    { Icon: FaGithub, label: "GitHub", href: "https://github.com/gauravguptasg64" },
+    { Icon: FaXTwitter, label: "X", href: "https://x.com/i_sushant1" },
+    { Icon: FaLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/sushant-prasad/" },
+    { Icon: FaGithub, label: "GitHub", href: "https://github.com/Sushant-Prasad" },
   ];
 
   const glowVariants = {
