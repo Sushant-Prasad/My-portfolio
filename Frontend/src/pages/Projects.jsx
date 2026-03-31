@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import donateDelightImg from '../assets/DonateDelight.png'
-import FlexiSpot from '../assets/FlexiSpot.png'
+import FlexiSpot from '../assets/Flexispot.png'
 import PrepMate from '../assets/PrepMate.png'
 import todoImg from '../assets/todo.png'
 
