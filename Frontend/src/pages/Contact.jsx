@@ -107,7 +107,7 @@ const Contact = () => {
 
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-stretch'>
           <motion.div
-            className='rounded-2xl border border-white/15 bg-white/5 backdrop-blur-md p-5 sm:p-6 shadow-xl flex items-center justify-center min-h-[320px]'
+            className='hidden lg:flex rounded-2xl border border-white/15 bg-white/5 backdrop-blur-md p-5 sm:p-6 shadow-xl items-center justify-center min-h-[320px]'
             initial={{ opacity: 0, x: -24 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.55 }}
