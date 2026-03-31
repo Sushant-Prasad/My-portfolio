@@ -130,12 +130,16 @@ const Projects = () => {
               <div className='mt-6 flex items-center gap-3'>
                 <a
                   href={project.live}
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className='px-4 py-2 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition'
                 >
                   Live
                 </a>
                 <a
                   href={project.code}
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className='px-4 py-2 rounded-lg border border-white/25 bg-white/10 hover:bg-white/20 transition'
                 >
                   Code
