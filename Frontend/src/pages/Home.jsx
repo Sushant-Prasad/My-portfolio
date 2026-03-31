@@ -50,7 +50,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="w-full min-h-screen relative bg-black overflow-hidden pt-20"
+      className="w-full h-screen relative bg-black overflow-hidden pt-14"
     >
       <ParticlesBackground />
       <div className="absolute inset-0">
@@ -78,11 +78,11 @@ const Home = () => {
         animate-pulse delay-500"
       />
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 lg:grid-cols-2">
-        <div className="flex flex-col justify-center text-center lg:text-left relative">
+      <div className="relative z-10 w-full h-full max-w-7xl mx-auto px-4 py-4 grid grid-cols-1 lg:grid-cols-2">
+        <div className="flex flex-col justify-center text-center lg:text-left relative lg:pl-8 xl:pl-12">
           <div className="w-full lg:pr-24 mx-auto max-w-[48rem]">
             <motion.div
-              className="mb-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white tracking-wide min-h-[1.6em]"
+              className="mb-2 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white tracking-wide min-h-[1.4em]"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -94,19 +94,19 @@ const Home = () => {
               ></span>
             </motion.div>
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#1cd8d2] via-[#0038f8] to-[#302b63] drop-shadow-lg"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#1cd8d2] via-[#0038f8] to-[#302b63] drop-shadow-lg"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
               Hello,  I'm
               <br />
-              <span className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl lg:whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600">
+              <span className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl lg:whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600">
                 Sushant Prasad
               </span>
             </motion.h1>
             <motion.p
-              className="mt-6 text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl lg:min-0"
+              className="mt-3 text-sm sm:text-base md:text-lg text-gray-300 max-w-2xl lg:min-0"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
@@ -114,26 +114,26 @@ const Home = () => {
               I convert innovative ideas into seamless, high-impact web solutions, developing modern, scalable, and lightning-fast applications that make an impact.
             </motion.p>
             <motion.div
-              className="mt-10   flex flex-wrap items-center justify-center lg:justify-start gap-6"
+              className="mt-4 flex flex-wrap items-center justify-center lg:justify-start gap-3"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.8 }}
             >
               <a
                 href="#projects"
-                className="px-6 py-3 rounded-full font-medium text-lg text-white bg-gradient-to-r from-[#1cd8d2] via-[#00b8f8] to-[#302b63] shadow-lg hover:scale-105 transition-all "
+                className="px-5 py-2.5 rounded-full font-medium text-base text-white bg-gradient-to-r from-[#1cd8d2] via-[#00b8f8] to-[#302b63] shadow-lg hover:scale-105 transition-all "
               >
                 View My Work
               </a>
               <a
                 href="/Resume.pdf"
                 download
-                className="px-6 py-3 rounded-full text-lg font-medium text-black bg-white hover:bg-gray-200 shadow-lg hover:scale-105 transition-all "
+                className="px-5 py-2.5 rounded-full text-base font-medium text-black bg-white hover:bg-gray-200 shadow-lg hover:scale-105 transition-all "
               >
                 My Resume
               </a>
             </motion.div>
-            <motion.div className="mt-10 flex gap-5 text-2xl md:text-3xl justify-center lg:justify-start">
+            <motion.div className="mt-4 flex gap-4 text-xl md:text-2xl justify-center lg:justify-start">
               {socials.map(({ Icon, label, href }) => (
                 <motion.a
                   href={href}
