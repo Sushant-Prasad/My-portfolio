@@ -1,4 +1,4 @@
-import CustomCursor from "./components/customCursor";
+import CustomCursor from "./components/CustomCursor";
 import Navbar from "./components/Navbar";
 // import ParticlesBackground from "./components/ParticlesBackground";
 import About from "./pages/About";
