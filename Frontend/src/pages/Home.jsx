@@ -2,19 +2,19 @@ import React, { useState, useEffect, useMemo } from "react";
 import ParticlesBackground from "../components/ParticlesBackground";
 import { motion } from "framer-motion";
 import { FaXTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
-import avatar from "../assets/avatar.png";
+import avatar from "../assets/avatar1.png";
 
 const Home = () => {
-  const roles = useMemo(() => ["Web Developer", "Full Stack Developer"], []);
+  const roles = useMemo(() => ["Web Developer", "Full Stack Developer", "MERN Stack Developer", ], []);
 
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [deleting, setDeleting] = useState(false);
 
   const socials = [
-    { Icon: FaXTwitter, label: "X", href: "https://x.com/i_sushant1" },
     { Icon: FaLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/sushant-prasad/" },
     { Icon: FaGithub, label: "GitHub", href: "https://github.com/Sushant-Prasad" },
+    { Icon: FaXTwitter, label: "X", href: "https://x.com/i_sushant1" },
   ];
 
   const glowVariants = {
@@ -101,7 +101,7 @@ const Home = () => {
             >
               Hello,  I'm
               <br />
-              <span className="text-white font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl lg:whitespace-nowrap">
+              <span className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl lg:whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600">
                 Sushant Prasad
               </span>
             </motion.h1>
@@ -111,9 +111,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              I turn complex ideas into seamless, high-impact web experiences –
-              building modern, scalable, and lightning-fast applications that
-              make a difference.
+              I convert innovative ideas into seamless, high-impact web solutions, developing modern, scalable, and lightning-fast applications that make an impact.
             </motion.p>
             <motion.div
               className="mt-10   flex flex-wrap items-center justify-center lg:justify-start gap-6"

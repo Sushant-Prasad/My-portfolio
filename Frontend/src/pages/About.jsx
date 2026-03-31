@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import sushant from '../assets/Sushant.png'
 
 const About = () => {
   const glows = [
@@ -14,7 +15,7 @@ const About = () => {
       
       <div className="absolute inset-0 pointer-events-none">
         {glows.map((c,i) => (
-          <div key={i} className={`absolute rounded-full bg-gradient-to-r from-[#302b63] via-[#00b8f8] to-[#1cd8d2] animate-pulse ${c}`} />
+          <div key={i} className={`absolute rounded-full bg-gradient-to-r from-[#302b63] via-[#302b63] to-[#1cd8d2] animate-pulse ${c}`} />
         ))}
       </div>
 
@@ -29,18 +30,18 @@ const About = () => {
             whileHover={{scale:1.02}}
             transition={{type:"spring", stiffness:200, damping:18}}
           >
-            <img src={""} alt="profile" className="absolute inset-0" />
+            <img src={sushant} alt="profile" className="absolute inset-0" />
           </motion.div>
 
           <div className="flex-1 flex flex-col justify-center text-center md:text-left">
-            <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#1cd8d2] via-[#00b8f8] to-[#1cd8d2]">
+            <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-amber-600">
               Sushant Prasad
             </h2>
             <p className="mt-2 text-lg sm:text-xl text-white/90 font-semibold">
               Full Stack Developer
             </p>
             <p className="md:text-4 text-gray-300 leading-relaxed text-base sm:text-lg max-w-2xl md:max-w-3xl">
-              I build scalable, modern applications with a strong focus on clean architecture, delightful UX, and performance. My toolkit spans Java, React, Next.js, TypeScript, Tailwind CSS, and RestfulAPI– bringing ideas to life from concept to production with robust APIs and smooth interfaces.
+             I create modern and scalable applications focused on performance, clean architecture, and seamless user experience. With expertise in Java, React, Node.js, and Spring Boot, I bring ideas to life through efficient backend systems and responsive interfaces.
             </p>
             <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
               <a href="#projects" className="inline-flex items-center justify-center rounded-lg bg-white text-black font-semibold px-5 py-3 hover:bg-white/20 transition">View Projects</a>

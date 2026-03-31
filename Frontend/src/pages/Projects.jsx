@@ -2,32 +2,40 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const Projects = () => {
-  const projects = [
-    {
-      title: 'Portfolio Website',
-      desc: 'A modern personal portfolio with smooth animations, responsive layout, and interactive sections.',
-      tech: ['React', 'Tailwind', 'Framer Motion'],
-      image: 'https://placehold.co/800x500/0b1220/1cd8d2?text=Portfolio+Website',
-      live: '#',
-      code: '#',
-    },
-    {
-      title: 'Task Manager App',
-      desc: 'A full-stack task manager with authentication, CRUD operations, and dashboard analytics.',
-      tech: ['React', 'Node.js', 'MongoDB'],
-      image: 'https://placehold.co/800x500/111827/00b8f8?text=Task+Manager+App',
-      live: '#',
-      code: '#',
-    },
-    {
-      title: 'E-Commerce Backend',
-      desc: 'RESTful backend for products, cart, orders, and payments with robust API architecture.',
-      tech: ['Express', 'MongoDB', 'JWT'],
-      image: 'https://placehold.co/800x500/140f2d/ffffff?text=E-Commerce+Backend',
-      live: '#',
-      code: '#',
-    },
-  ]
+ const projects = [
+  {
+    title: 'PrepMate',
+    desc: 'A full-stack learning platform for DSA and aptitude practice with user authentication, streak tracking, code execution integration, and personalized dashboard features.',
+    tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'React Query'],
+    image: '',
+    live: '#',
+    code: '#',
+  },
+  {
+    title: 'FlexiSpot',
+    desc: 'A full-stack seat and meeting room booking system with real-time availability, booking, and cancellation features using scalable REST APIs and a responsive UI.',
+    tech: ['React.js', 'Spring Boot', 'MySQL', 'Tailwind CSS'],
+    image: '',
+    live: '#',
+    code: '#',
+  },
+  {
+    title: 'DonateDelight',
+    desc: 'A web-based donation platform connecting donors with NGOs for food, clothes, and monetary contributions with a clean and user-friendly interface.',
+    tech: ['React.js', 'Tailwind CSS', 'JavaScript'],
+    image: '',
+    live: '#',
+    code: '#',
+  },
+  {
+    title: 'Todo App',
+    desc: 'A full-stack task management application with CRUD operations, real-time updates, and efficient state management for tracking daily activities.',
+    tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'React Query'],
+    image: '',
+    live: '#',
+    code: '#',
+  },
+];
 
   const container = {
     hidden: { opacity: 0 },
