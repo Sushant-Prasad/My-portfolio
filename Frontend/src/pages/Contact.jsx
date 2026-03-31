@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
-import avatar from '../assets/avatar1.png'
+import avatar from '../assets/avatar2.png'
 
 const Contact = () => {
   const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID

@@ -1,5 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import donateDelightImg from '../assets/DonateDelight.png'
+import FlexiSpot from '../assets/FlexiSpot.png'
+import PrepMate from '../assets/PrepMate.png'
+import todoImg from '../assets/todo.png'
 
 const Projects = () => {
  const projects = [
@@ -7,33 +11,33 @@ const Projects = () => {
     title: 'PrepMate',
     desc: 'A full-stack learning platform for DSA and aptitude practice with user authentication, streak tracking, code execution integration, and personalized dashboard features.',
     tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'React Query'],
-    image: '',
+    image: PrepMate,
     live: '#',
-    code: '#',
+    code: 'https://github.com/Sushant-Prasad/PrepMate-MERN',
   },
   {
     title: 'FlexiSpot',
     desc: 'A full-stack seat and meeting room booking system with real-time availability, booking, and cancellation features using scalable REST APIs and a responsive UI.',
     tech: ['React.js', 'Spring Boot', 'MySQL', 'Tailwind CSS'],
-    image: '',
-    live: '#',
-    code: '#',
+    image: FlexiSpot,
+    live: 'https://flexispot.onrender.com',
+    code: 'https://github.com/Sushant-Prasad/FlexiSpot',
   },
   {
     title: 'DonateDelight',
     desc: 'A web-based donation platform connecting donors with NGOs for food, clothes, and monetary contributions with a clean and user-friendly interface.',
     tech: ['React.js', 'Tailwind CSS', 'JavaScript'],
-    image: '',
-    live: '#',
-    code: '#',
+    image: donateDelightImg,
+    live: 'https://donatedelight.onrender.com',
+    code: 'https://github.com/Sushant-Prasad/DonateDelight',
   },
   {
     title: 'Todo App',
     desc: 'A full-stack task management application with CRUD operations, real-time updates, and efficient state management for tracking daily activities.',
     tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'React Query'],
-    image: '',
-    live: '#',
-    code: '#',
+    image: todoImg,
+    live: 'https://todo-frontend-lmer.onrender.com',
+    code: 'https://github.com/Sushant-Prasad/TODO',
   },
 ];
 
@@ -105,7 +109,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className='w-full h-44 object-cover transition-transform duration-500 hover:scale-105'
+                  className='w-full h-44  transition-transform duration-500 hover:scale-105'
                   loading='lazy'
                 />
               </div>
